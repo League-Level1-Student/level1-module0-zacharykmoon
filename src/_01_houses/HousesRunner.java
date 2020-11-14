@@ -7,7 +7,13 @@ public class HousesRunner {
 		Houses houseBuilder = new Houses();
 		houseBuilder.run();
 
+	}
 
+	private static void Robot() {
+		// TODO Auto-generated method stub
+		Robot rob  = new Robot();
+rob.setX(0);
+rob.setY(150);
 	}
 
 }
