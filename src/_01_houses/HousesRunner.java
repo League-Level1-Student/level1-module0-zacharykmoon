@@ -1,5 +1,7 @@
 package _01_houses;
 
+import org.jointheleague.graphical.robot.Robot;
+
 public class HousesRunner {
 
 	public static void main(String[] args) {
@@ -7,13 +9,6 @@ public class HousesRunner {
 		Houses houseBuilder = new Houses();
 		houseBuilder.run();
 
-	}
-
-	private static void Robot() {
-		// TODO Auto-generated method stub
-		Robot rob  = new Robot();
-rob.setX(0);
-rob.setY(150);
 	}
 
 }
