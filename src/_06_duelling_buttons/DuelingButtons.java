@@ -1,5 +1,7 @@
 package _06_duelling_buttons;
 
+import java.awt.Component;
+
 /*
  *    Copyright (c) The League of Amazing Programmers 2013-2019
  *    Level 1
@@ -15,6 +17,7 @@ import javax.swing.JPanel;
 
 public class DuelingButtons implements ActionListener {
 
+	private static final Component Jpanel = null;
 	JButton leftButton = new JButton();
 	JButton rightButton = new JButton();
 
@@ -24,7 +27,7 @@ public class DuelingButtons implements ActionListener {
 	JFrame frame = new JFrame();
 	JPanel panel = new JPanel();
 
-	public void run() {
+	public void run() {	// hi zach!  let me know if you have any questions :)
 
 		// 1. Add the panel to the frame
 frame.add(panel);
@@ -35,16 +38,17 @@ leftButton.setText("Click me ");
 		// 4. Set the text of the rightButton to "Click me!"
 rightButton.setText("Click me");
 		// 5. Add an action listener to the leftButton
-
+leftButton.addActionListener(this);
 		// 6. Add an action listener to the rightButton
-
+rightButton.addActionListener(this);
 		// 7. Add the leftButton to the panel
-
+panel.add(leftButton);
 		// 8. Add the rightButton to the panel
-
+panel.add(rightButton);
 		// 9. Pack the frame
-
+frame.pack();
 		// 10. Set the title of the frame to "Demanding Buttons"
+frame.setTitle("Demanding Buttons");
 
 	}
 
