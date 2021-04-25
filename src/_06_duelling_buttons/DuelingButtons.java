@@ -61,7 +61,10 @@ frame.setTitle("Demanding Buttons");
 		// Set the PREFERRED size of the rightButton to BIG
 		// Set the text of the leftButton to "Click Me!"
 		// Set the PREFERRED size of the leftButton to SMALL
-
+if(button) {
+	
+	
+}
 		/* If the buttonPressed was the rightButton, do the opposite. */
 
 		frame.pack();
