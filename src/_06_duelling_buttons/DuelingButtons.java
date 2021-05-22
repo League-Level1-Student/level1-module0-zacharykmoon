@@ -54,19 +54,32 @@ frame.setTitle("Demanding Buttons");
 
 	@Override
 	public void actionPerformed(ActionEvent arg0) {
-		JButton buttonPressed = (JButton) arg0.getSource();
-
+		JButton buttonPressed = (JButton) arg0.getSource();	
+if(buttonPressed == leftButton) {
+	rightButton.setText("No Click me!");
 		/* If the buttonPressed was the leftButton.... */
+    //leftButton.setText("No Click ME! ");
 		// Set the text of the rightButton to "No, click Me!"
+    
 		// Set the PREFERRED size of the rightButton to BIG
+    rightButton.setPreferredSize(BIG);
 		// Set the text of the leftButton to "Click Me!"
+    leftButton.setText("Click Me !");
 		// Set the PREFERRED size of the leftButton to SMALL
-if(button) {
-	
-	
+    leftButton.setPreferredSize(SMALL);
 }
-		/* If the buttonPressed was the rightButton, do the opposite. */
+	
 
+		/* If the buttonPressed was the rightButton, do the opposite. */
+if(buttonPressed == rightButton) {
+	leftButton.setText("No Click me!");
+//	rightButton.setText("No Click ME! ");
+	leftButton.setPreferredSize(BIG);
+	rightButton.setText("Click Me !");
+	// Set the PREFERRED size of the leftButton to SMALL
+    rightButton.setPreferredSize(SMALL);
+
+}
 		frame.pack();
 	}
 }
