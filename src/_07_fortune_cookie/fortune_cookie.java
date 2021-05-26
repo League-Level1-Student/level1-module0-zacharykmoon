@@ -15,11 +15,15 @@ public class fortune_cookie implements ActionListener {
         frame.add(button);
         frame.pack();
         button.addActionListener( this);        
-        int rand = new Random().nextInt(5);
-   }
+	}
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
+		
+		  System.out.println("A light carries you with hard times");
+		  int rand = new Random().nextInt(5);
+	
+		  
 		// TODO Auto-generated method stub
 		
 	}
